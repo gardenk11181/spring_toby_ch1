@@ -4,11 +4,10 @@ import java.sql.SQLException;
 
 public class UserDaoTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        ConnectionMaker connectionMaker = new GConnectionMaker();
-        UserDao dao = new UserDao(connectionMaker);
+        UserDao dao = new DaoFactory().userDao();
 
         User user = new User();
-        user.setId("1111");
+        user.setId("garden");
         user.setName("김정원");
         user.setPassword("dayoung");
 

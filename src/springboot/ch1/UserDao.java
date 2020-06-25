@@ -3,6 +3,7 @@ package springboot.ch1;
 import java.sql.*;
 
 public class UserDao {
+    // DaoFactory로 ConnectionMaker 선택 권환 위임 -> became passive
     private ConnectionMaker connectionMaker;
 
     public UserDao(ConnectionMaker connectionMaker) {

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9352447-36d7-41c7-afd7-bf924ef86742" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/springboot/ch1/ConnectionMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springboot/ch1/GConnectionMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springboot/ch1/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring_toby_ch1/springboot/ch1/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring_toby_ch1/springboot/ch1/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spring_toby_ch1/springboot/ch1/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springboot/ch1/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springboot/ch1/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +55,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="springboot.ch1.Test" />
+    <configuration name="UserDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springboot.ch1.UserDaoTest" />
       <module name="spring_toby_ch1" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.UserDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593089303108</updated>
-      <workItem from="1593089304616" duration="5683000" />
+      <workItem from="1593089304616" duration="7472000" />
     </task>
     <servers />
   </component>
@@ -109,22 +112,26 @@
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
     <state x="1370" y="459" key="DetectedRootsChooserDialog/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593093503328" />
-    <state width="1423" height="317" key="GridCell.Tab.0.bottom" timestamp="1593095815003">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state width="1423" height="317" key="GridCell.Tab.0.bottom" timestamp="1593097804511">
+      <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815003" />
-    <state width="1423" height="317" key="GridCell.Tab.0.center" timestamp="1593095815002">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state width="1423" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593097804511" />
+    <state width="1423" height="317" key="GridCell.Tab.0.center" timestamp="1593097804510">
+      <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815002" />
-    <state width="1423" height="317" key="GridCell.Tab.0.left" timestamp="1593095815002">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state width="1423" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593097804510" />
+    <state width="1423" height="317" key="GridCell.Tab.0.left" timestamp="1593097804510">
+      <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815002" />
-    <state width="1423" height="317" key="GridCell.Tab.0.right" timestamp="1593095815003">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state width="1423" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593097804510" />
+    <state width="1423" height="317" key="GridCell.Tab.0.right" timestamp="1593097804510">
+      <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815003" />
+    <state width="1423" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593097804510" />
     <state x="1096" y="318" key="SettingsEditor" timestamp="1593093561736">
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
