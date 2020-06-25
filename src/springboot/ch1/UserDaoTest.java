@@ -2,9 +2,10 @@ package springboot.ch1;
 
 import java.sql.SQLException;
 
-public class Test {
+public class UserDaoTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        UserDao dao = new UserDao();
+        ConnectionMaker connectionMaker = new GConnectionMaker();
+        UserDao dao = new UserDao(connectionMaker);
 
         User user = new User();
         user.setId("1111");
