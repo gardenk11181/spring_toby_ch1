@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 DBConnectionMaker를 보내 userDao생성
     @Bean
     public UserDao userDao() {
+        // 의존 관계 주입 (런타임 의존관계)
         return new UserDao(connectionMaker());
     }
 
@@ -20,6 +21,11 @@ public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 D
 //    }
     @Bean
     public ConnectionMaker connectionMaker() {
+        return new CountingConnectionMaker(realCountingMaker());
+    }
+
+    @Bean
+    public ConnectionMaker realCountingMaker() {
         return new GConnectionMaker();
     }
 }
