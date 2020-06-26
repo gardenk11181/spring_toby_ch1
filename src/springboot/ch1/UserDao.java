@@ -6,7 +6,12 @@ public class UserDao {
     // DaoFactory로 ConnectionMaker 선택 권환 위임 -> became passive
     private ConnectionMaker connectionMaker;
 
-    public UserDao(ConnectionMaker connectionMaker) {
+//    public UserDao(ConnectionMaker connectionMaker) {
+////        this.connectionMaker = connectionMaker;
+////    }
+
+    // 수정자 메서드 - xml 설정 용이
+    public void setConnectionMaker(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
     }
 

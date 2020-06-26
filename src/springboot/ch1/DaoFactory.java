@@ -8,7 +8,11 @@ public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 D
     @Bean
     public UserDao userDao() {
         // 의존 관계 주입 (런타임 의존관계)
-        return new UserDao(connectionMaker());
+
+//         의존 관계 주입 By Setter
+         UserDao userDao = new UserDao();
+         userDao.setConnectionMaker(connectionMaker());
+         return userDao;
     }
 
     // Another Db Accessing Object
@@ -21,11 +25,14 @@ public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 D
 //    }
     @Bean
     public ConnectionMaker connectionMaker() {
-        return new CountingConnectionMaker(realCountingMaker());
+
+        CountingConnectionMaker countingConnectionMaker = new CountingConnectionMaker();
+        countingConnectionMaker.setRealConnectionMaker(realConnectionMaker());
+        return countingConnectionMaker;
     }
 
     @Bean
-    public ConnectionMaker realCountingMaker() {
+    public ConnectionMaker realConnectionMaker() {
         return new GConnectionMaker();
     }
 }

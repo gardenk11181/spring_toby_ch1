@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="realConnectionMaker" class="springboot.ch1.GConnectionMaker"/>
+    <bean id="connectionMaker" class="springboot.ch1.CountingConnectionMaker">
+        <property name="realConnectionMaker" ref="realConnectionMaker"/>
+    </bean>
+    <bean id="userDao" class="springboot.ch1.UserDao">
+        <property name="connectionMaker" ref="connectionMaker"/>
+    </bean>
+</beans>
