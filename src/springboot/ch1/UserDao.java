@@ -1,22 +1,23 @@
 package springboot.ch1;
 
+import javax.sql.DataSource;
 import java.sql.*;
 
 public class UserDao {
     // DaoFactory로 ConnectionMaker 선택 권환 위임 -> became passive
-    private ConnectionMaker connectionMaker;
+    private DataSource dataSource;
 
 //    public UserDao(ConnectionMaker connectionMaker) {
 ////        this.connectionMaker = connectionMaker;
 ////    }
 
     // 수정자 메서드 - xml 설정 용이
-    public void setConnectionMaker(ConnectionMaker connectionMaker) {
-        this.connectionMaker = connectionMaker;
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
     }
 
-    public void add(User user) throws ClassNotFoundException, SQLException {
-        Connection c = connectionMaker.makeConnection();
+    public void add(User user) throws SQLException {
+        Connection c = dataSource.getConnection();
         PreparedStatement ps = c.prepareStatement(
                 "insert into users(id,name,password) values(?,?,?)");
         ps.setString(1,user.getId());
@@ -29,8 +30,8 @@ public class UserDao {
         c.close();
     }
 
-    public User get(String id) throws ClassNotFoundException, SQLException {
-        Connection c = connectionMaker.makeConnection();
+    public User get(String id) throws SQLException {
+        Connection c = dataSource.getConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "select * from users where id = ?"

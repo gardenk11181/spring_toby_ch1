@@ -17,7 +17,7 @@ public class UserDaoTest {
         UserDao dao = context.getBean("userDao",UserDao.class);
 
         User user = new User();
-        user.setId("garden5");
+        user.setId("garden7");
         user.setName("김정원");
         user.setPassword("dayoung");
 

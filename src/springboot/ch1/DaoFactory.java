@@ -2,6 +2,9 @@ package springboot.ch1;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 DBConnectionMaker를 보내 userDao생성
@@ -11,7 +14,7 @@ public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 D
 
 //         의존 관계 주입 By Setter
          UserDao userDao = new UserDao();
-         userDao.setConnectionMaker(connectionMaker());
+         userDao.setDataSource(dataSource());
          return userDao;
     }
 
@@ -34,5 +37,16 @@ public class DaoFactory { // Client로부터 요청을 받으면, 해당하는 D
     @Bean
     public ConnectionMaker realConnectionMaker() {
         return new GConnectionMaker();
+    }
+
+    @Bean
+    public DataSource dataSource() {
+        SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
+        dataSource.setDriverClass(com.mysql.cj.jdbc.Driver.class);
+        dataSource.setUrl("jdbc:mysql://localhost:3306/db_spring");
+        dataSource.setUsername("springuser");
+        dataSource.setPassword("springuser");
+
+        return dataSource;
     }
 }
