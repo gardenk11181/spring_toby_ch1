@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9352447-36d7-41c7-afd7-bf924ef86742" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/spring_toby_ch1/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/spring_toby_ch1/UserDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_toby_ch1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_toby_ch1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springboot/ch1/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +56,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -58,6 +64,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in spring_toby_ch1">
@@ -89,6 +98,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_toby_ch1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTest.addAndGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_toby_ch1" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,6 +126,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in spring_toby_ch1" />
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.addAndGet" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.UserDaoTest" />
@@ -118,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593089303108</updated>
-      <workItem from="1593089304616" duration="21792000" />
+      <workItem from="1593089304616" duration="25012000" />
     </task>
     <servers />
   </component>
@@ -151,34 +176,38 @@
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state x="1441" y="438" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593153342633" />
-    <state x="1094" y="603" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593152500207">
+    <state x="1094" y="603" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593164109852">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
-    <state x="1094" y="603" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593152500207" />
+    <state x="1094" y="603" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109852" />
+    <state x="1066" y="490" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593163301731">
+      <screen x="0" y="23" width="2560" height="1342" />
+    </state>
+    <state x="1066" y="490" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593163301731" />
     <state x="1370" y="459" key="DetectedRootsChooserDialog" timestamp="1593093503328">
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
     <state x="1370" y="459" key="DetectedRootsChooserDialog/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593093503328" />
-    <state width="1984" height="317" key="GridCell.Tab.0.bottom" timestamp="1593156924783">
+    <state width="1984" height="317" key="GridCell.Tab.0.bottom" timestamp="1593164109889">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815003" />
-    <state width="1984" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593156924783" />
-    <state width="1984" height="317" key="GridCell.Tab.0.center" timestamp="1593156924782">
+    <state width="1984" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109889" />
+    <state width="1984" height="317" key="GridCell.Tab.0.center" timestamp="1593164109888">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815002" />
-    <state width="1984" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593156924782" />
-    <state width="1984" height="317" key="GridCell.Tab.0.left" timestamp="1593156924782">
+    <state width="1984" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109888" />
+    <state width="1984" height="317" key="GridCell.Tab.0.left" timestamp="1593164109887">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815002" />
-    <state width="1984" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593156924782" />
-    <state width="1984" height="317" key="GridCell.Tab.0.right" timestamp="1593156924783">
+    <state width="1984" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109887" />
+    <state width="1984" height="317" key="GridCell.Tab.0.right" timestamp="1593164109888">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815003" />
-    <state width="1984" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593156924783" />
+    <state width="1984" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109888" />
     <state x="1096" y="319" key="SettingsEditor" timestamp="1593153878870">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
@@ -196,9 +225,9 @@
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
     <state x="985" y="360" key="new project wizard/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593153771052" />
-    <state x="1296" y="428" key="spring file set editor" timestamp="1593151842460">
+    <state x="1296" y="428" key="spring file set editor" timestamp="1593163325988">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
-    <state x="1296" y="428" key="spring file set editor/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593151842460" />
+    <state x="1296" y="428" key="spring file set editor/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593163325988" />
   </component>
 </project>
