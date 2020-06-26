@@ -1,14 +1,18 @@
-package springboot.ch1;
-
+import org.junit.Test;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-
 import java.sql.SQLException;
+import springboot.ch1.User;
+import springboot.ch1.UserDao;
 
 public class UserDaoTest {
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
+    @Test
+    public void addAndGet() throws SQLException {
         // use Java Code to DI
 //        ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
 
@@ -17,23 +21,19 @@ public class UserDaoTest {
         UserDao dao = context.getBean("userDao",UserDao.class);
 
         User user = new User();
-        user.setId("garden7");
-        user.setName("김정원");
-        user.setPassword("dayoung");
+        user.setId("dayoung2");
+        user.setName("정다영");
+        user.setPassword("haha");
 
         dao.add(user);
 
-        System.out.println(user.getId() + " 등록 성공 ");
-
         User user2 = dao.get(user.getId());
-        System.out.println(user2.getName());
 
-        System.out.println(user2.getPassword());
+        assertThat(user2.getName(),is(user.getName()));
+        assertThat(user2.getPassword(),is(user.getPassword()));
 
-        System.out.println(user2.getId()+ " 조회 성공 ");
-
-        CountingConnectionMaker ccm = context.getBean("connectionMaker",CountingConnectionMaker.class);
-        System.out.println("Connection counter : "+ccm.getCounter());
+//        CountingConnectionMaker ccm = context.getBean("connectionMaker",CountingConnectionMaker.class);
+//        System.out.println("Connection counter : "+ccm.getCounter());
 
     }
 }
