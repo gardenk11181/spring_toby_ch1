@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9352447-36d7-41c7-afd7-bf924ef86742" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springboot/ch1/test-applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/spring_toby_ch1/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/spring_toby_ch1/UserDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring_toby_ch1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_toby_ch1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springboot/ch1/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springboot/ch1/GConnectionMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/GConnectionMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springboot/ch1/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/springboot/ch1/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +57,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/springboot/ch1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Github\spring_toby_ch1\src\springboot\ch1" />
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
@@ -133,6 +136,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -144,6 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593089303108</updated>
       <workItem from="1593089304616" duration="25012000" />
+      <workItem from="1593402229710" duration="3862000" />
     </task>
     <servers />
   </component>
@@ -172,6 +188,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1421" y="427" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1593089547609" />
+    <state x="577" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593402315345">
+      <screen x="0" y="0" width="1457" height="864" />
+    </state>
+    <state x="577" y="321" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1457.864@0.0.1457.864" timestamp="1593402315345" />
     <state x="1441" y="438" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1593153342633">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>
@@ -188,31 +208,44 @@
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
     <state x="1370" y="459" key="DetectedRootsChooserDialog/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593093503328" />
-    <state width="1984" height="317" key="GridCell.Tab.0.bottom" timestamp="1593164109889">
-      <screen x="0" y="23" width="2560" height="1342" />
+    <state x="719" y="179" key="FileChooserDialogImpl" timestamp="1593402728689">
+      <screen x="0" y="0" width="1457" height="864" />
+    </state>
+    <state x="719" y="179" key="FileChooserDialogImpl/0.0.1457.864@0.0.1457.864" timestamp="1593402728689" />
+    <state width="1414" height="224" key="GridCell.Tab.0.bottom" timestamp="1593405757089">
+      <screen x="0" y="0" width="1457" height="864" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815003" />
     <state width="1984" height="317" key="GridCell.Tab.0.bottom/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109889" />
-    <state width="1984" height="317" key="GridCell.Tab.0.center" timestamp="1593164109888">
-      <screen x="0" y="23" width="2560" height="1342" />
+    <state width="1414" height="224" key="GridCell.Tab.0.bottom/0.0.1457.864@0.0.1457.864" timestamp="1593405757089" />
+    <state width="1414" height="224" key="GridCell.Tab.0.center" timestamp="1593405757089">
+      <screen x="0" y="0" width="1457" height="864" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815002" />
     <state width="1984" height="317" key="GridCell.Tab.0.center/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109888" />
-    <state width="1984" height="317" key="GridCell.Tab.0.left" timestamp="1593164109887">
-      <screen x="0" y="23" width="2560" height="1342" />
+    <state width="1414" height="224" key="GridCell.Tab.0.center/0.0.1457.864@0.0.1457.864" timestamp="1593405757089" />
+    <state width="1414" height="224" key="GridCell.Tab.0.left" timestamp="1593405757088">
+      <screen x="0" y="0" width="1457" height="864" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815002" />
     <state width="1984" height="317" key="GridCell.Tab.0.left/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109887" />
-    <state width="1984" height="317" key="GridCell.Tab.0.right" timestamp="1593164109888">
-      <screen x="0" y="23" width="2560" height="1342" />
+    <state width="1414" height="224" key="GridCell.Tab.0.left/0.0.1457.864@0.0.1457.864" timestamp="1593405757088" />
+    <state width="1414" height="224" key="GridCell.Tab.0.right" timestamp="1593405757089">
+      <screen x="0" y="0" width="1457" height="864" />
     </state>
     <state width="1423" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593095815003" />
     <state width="1984" height="317" key="GridCell.Tab.0.right/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593164109888" />
-    <state x="1096" y="319" key="SettingsEditor" timestamp="1593153878870">
-      <screen x="0" y="23" width="2560" height="1342" />
+    <state width="1414" height="224" key="GridCell.Tab.0.right/0.0.1457.864@0.0.1457.864" timestamp="1593405757089" />
+    <state x="419" y="13" key="SettingsEditor" timestamp="1593402737144">
+      <screen x="0" y="0" width="1457" height="864" />
     </state>
     <state x="1096" y="318" key="SettingsEditor/-1366.340.1366.1001/0.23.2560.1338@0.23.2560.1338" timestamp="1593093561736" />
     <state x="1096" y="319" key="SettingsEditor/-1366.340.1366.1001/0.23.2560.1342@0.23.2560.1342" timestamp="1593153878870" />
+    <state x="419" y="13" key="SettingsEditor/0.0.1457.864@0.0.1457.864" timestamp="1593402737144" />
+    <state x="662" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1593402257778">
+      <screen x="0" y="0" width="1457" height="864" />
+    </state>
+    <state x="662" y="256" key="com.intellij.ide.util.TipDialog/0.0.1457.864@0.0.1457.864" timestamp="1593402257778" />
     <state x="1312" y="638" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593153869416">
       <screen x="0" y="23" width="2560" height="1342" />
     </state>

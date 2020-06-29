@@ -18,7 +18,7 @@ import springboot.ch1.User;
 import springboot.ch1.UserDao;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "/springboot/ch1/applicationContext.xml" )
+@ContextConfiguration(locations = "/springboot/ch1/test-applicationContext.xml" )
 public class UserDaoTest {
     // context를 모든 Test가 공유
 //    @Autowired

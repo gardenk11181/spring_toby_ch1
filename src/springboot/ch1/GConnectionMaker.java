@@ -8,7 +8,7 @@ public class GConnectionMaker implements ConnectionMaker {
     public Connection makeConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection c = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/db_spring","springuser","springuser"
+                "jdbc:mysql://localhost:3306/db_spring?","springuser","springuser"
         );
         return c;
     }
