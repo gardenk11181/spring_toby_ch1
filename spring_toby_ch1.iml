@@ -6,6 +6,7 @@
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/src/springboot/ch1/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/springboot/ch1/test-applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/springboot/ch1/junit.xml</file>
         </fileset>
       </configuration>
     </facet>
